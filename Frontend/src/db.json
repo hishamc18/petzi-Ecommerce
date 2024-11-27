@@ -1,0 +1,2003 @@
+{
+  "users": [
+    {
+      "role": "admin",
+      "username": "Leofy",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": "3cf7",
+      "cart": []
+    },
+    {
+      "id": "4c00",
+      "username": "Hisham",
+      "email": "hisham@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": false,
+      "wishlist": [
+        {
+          "id": "17",
+          "name": "Paw Patrol Dog Food",
+          "price": 154.99,
+          "oldPrice": 232.49,
+          "image": "src/assets/dogProduct/pd6.webp",
+          "category": "dog",
+          "seller": "Happy Pets",
+          "stock": 57,
+          "description": "Paw Patrol Dog Food is formulated to support active dogs with high energy needs, ensuring they receive optimal nutrition.",
+          "ingredients": [
+            "Chicken meal",
+            "Corn",
+            "Wheat",
+            "Soybean meal",
+            "Chicken fat (preserved with mixed tocopherols)",
+            "Beet pulp",
+            "Vitamins and minerals",
+            "Taurine"
+          ]
+        },
+        {
+          "id": "18",
+          "name": "Ruff and Tumble Dog Food",
+          "price": 699.99,
+          "oldPrice": 1049.99,
+          "image": "src/assets/dogProduct/pd7.webp",
+          "category": "dog",
+          "seller": "Cat Haven",
+          "stock": 57,
+          "description": "Ruff and Tumble Dog Food is a premium formula for dogs that combines high-quality proteins with essential nutrients to maintain health and vitality.",
+          "ingredients": [
+            "Salmon meal",
+            "Sweet potatoes",
+            "Peas",
+            "Chicken fat (preserved with mixed tocopherols)",
+            "Flaxseed",
+            "Carrots",
+            "Vitamins and minerals",
+            "Taurine"
+          ]
+        },
+        {
+          "id": "19",
+          "name": "Super Dog Fuel High Rich",
+          "price": 487.99,
+          "oldPrice": 731.99,
+          "image": "src/assets/dogProduct/pd8.webp",
+          "category": "dog",
+          "seller": "PetWorld",
+          "stock": 56,
+          "description": "Super Dog Fuel High Rich is an energy-dense formula designed for highly active dogs that require extra calories and nutrients.",
+          "ingredients": [
+            "Beef meal",
+            "Brown rice",
+            "Barley",
+            "Chicken fat (preserved with mixed tocopherols)",
+            "Dried egg product",
+            "Flaxseed",
+            "Vitamins and minerals",
+            "Taurine"
+          ]
+        }
+      ],
+      "cart": [],
+      "orders": [
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "2",
+              "name": "TailWaggers Nutrition Dog Food",
+              "price": 123.65,
+              "oldPrice": 185.48,
+              "image": "src/assets/dogProduct/pd2.jpg",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 16,
+              "quantity": 23
+            }
+          ],
+          "totalAmount": 2882.9500000000003,
+          "id": "1728935057863",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "9656736286"
+          },
+          "orderedItems": [
+            {
+              "name": "TailWaggers Nutrition Dog Food",
+              "price": 123.65,
+              "oldPrice": 185.48,
+              "image": "src/assets/dogProduct/pd2.jpg",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 5,
+              "id": "2",
+              "quantity": 1
+            },
+            {
+              "name": "WhiskerLickin' Cat Chow",
+              "price": 374.36,
+              "oldPrice": 561.54,
+              "image": "src/assets/catProduct/cat1.webp",
+              "category": "cat",
+              "seller": "Feline Friends",
+              "id": "3",
+              "stock": 58,
+              "quantity": 1
+            },
+            {
+              "id": "4",
+              "name": "Purrfect Paws Cat Food",
+              "price": 311.54,
+              "oldPrice": 467.31,
+              "image": "src/assets/catProduct/cat2.webp",
+              "category": "cat",
+              "seller": "Pet Supplies",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 848.55,
+          "id": "1728937562479",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "6",
+              "name": "Kitty Krunch Gourmet Cat Food",
+              "price": 785.95,
+              "oldPrice": 1178.93,
+              "image": "src/assets/catProduct/cat4.webp",
+              "category": "cat",
+              "seller": "Cat Haven",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 824.95,
+          "id": "1728939875479",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "7",
+              "name": "Feline Feast Cat Mix",
+              "price": 396.34,
+              "oldPrice": 594.51,
+              "image": "src/assets/catProduct/cat5.webp",
+              "category": "cat",
+              "seller": "PetWorld",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 435.34,
+          "id": "1728939951201",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "name": "WhiskerLickin' Cat Chow",
+              "price": 374.36,
+              "oldPrice": 561.54,
+              "image": "src/assets/catProduct/cat1.webp",
+              "category": "cat",
+              "seller": "Feline Friends",
+              "id": "3",
+              "stock": 57,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 413.36,
+          "id": "1728940468720",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "6",
+              "name": "Kitty Krunch Gourmet Cat Food",
+              "price": 785.95,
+              "oldPrice": 1178.93,
+              "image": "src/assets/catProduct/cat4.webp",
+              "category": "cat",
+              "seller": "Cat Haven",
+              "stock": 57,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 824.95,
+          "id": "1728940634411",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "6",
+              "name": "Kitty Krunch Gourmet Cat Food",
+              "price": 785.95,
+              "oldPrice": 1178.93,
+              "image": "src/assets/catProduct/cat4.webp",
+              "category": "cat",
+              "seller": "Cat Haven",
+              "stock": 56,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 824.95,
+          "id": "1728940670460",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "12",
+              "name": "Purr-fectly Balanced Cat Food",
+              "price": 319.99,
+              "oldPrice": 479.99,
+              "image": "src/assets/catProduct/cat10.webp",
+              "category": "cat",
+              "seller": "Cat Haven",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 358.99,
+          "id": "1728941226369",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "11",
+              "name": "Cuddly Cats' Delight",
+              "price": 549.99,
+              "oldPrice": 824.99,
+              "image": "src/assets/catProduct/cat9.webp",
+              "category": "cat",
+              "seller": "Happy Pets",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 588.99,
+          "id": "1728941891842",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "8",
+              "name": "Animal Kingdom Cat Treats",
+              "price": 124.75,
+              "oldPrice": 187.13,
+              "image": "src/assets/catProduct/cat6.webp",
+              "category": "cat",
+              "seller": "Animal Kingdom",
+              "stock": 58,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 163.75,
+          "id": "1728941910251",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "9656736286"
+          },
+          "orderedItems": [
+            {
+              "name": "WhiskerLickin' Cat Chow",
+              "price": 374.36,
+              "oldPrice": 561.54,
+              "image": "src/assets/catProduct/cat1.webp",
+              "category": "cat",
+              "seller": "Feline Friends",
+              "id": "3",
+              "stock": 55,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 413.36,
+          "id": "1729056323160",
+          "date": "2024-10-16"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "7",
+              "name": "Feline Feast Cat Mix",
+              "price": 396.34,
+              "oldPrice": 594.51,
+              "image": "src/assets/catProduct/cat5.webp",
+              "category": "cat",
+              "seller": "PetWorld",
+              "stock": 56,
+              "quantity": 1
+            },
+            {
+              "id": "4",
+              "name": "Purrfect Paws Cat Food",
+              "price": 311.54,
+              "oldPrice": 467.31,
+              "image": "src/assets/catProduct/cat2.webp",
+              "category": "cat",
+              "seller": "Pet Supplies",
+              "stock": 56,
+              "quantity": 1
+            },
+            {
+              "id": "14",
+              "name": "Barking Good Dog Food",
+              "price": 462.99,
+              "oldPrice": 694.49,
+              "image": "src/assets/dogProduct/pd3.webp",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 58,
+              "quantity": 1
+            },
+            {
+              "id": "15",
+              "name": "Pawfect Meal Dog Food",
+              "price": 325.65,
+              "oldPrice": 488.48,
+              "image": "src/assets/dogProduct/pd4.webp",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 58,
+              "quantity": 2
+            }
+          ],
+          "totalAmount": 1861.1699999999998,
+          "id": "1729069317976",
+          "date": "2024-10-16"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "name": "WhiskerLickin' Cat Chow",
+              "price": 374.36,
+              "oldPrice": 561.54,
+              "image": "src/assets/catProduct/cat1.webp",
+              "category": "cat",
+              "seller": "Feline Friends",
+              "id": "3",
+              "stock": 54,
+              "quantity": 10
+            }
+          ],
+          "totalAmount": 3782.6000000000004,
+          "id": "1729076794069",
+          "date": "2024-10-16"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Suhail",
+            "streetAddress": "suhailvalappil",
+            "city": "valanchery",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 68,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 195.99,
+          "id": "1729093173441",
+          "date": "2024-10-16"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 60,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 58,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 433.64,
+          "id": "1729253124031",
+          "date": "2024-10-18"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 59,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 7
+            },
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 57,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "23",
+              "name": "Ultimate Pup Dog Food",
+              "price": 314.99,
+              "oldPrice": 472.49,
+              "image": "src/assets/dogProduct/pd12.jpg",
+              "category": "dog",
+              "seller": "Happy Pets",
+              "stock": 57,
+              "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
+              "ingredients": [
+                "Chicken meal",
+                "Brown rice",
+                "Oats",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Blueberries",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "24",
+              "name": "Cat Nutritious Food",
+              "price": 114.99,
+              "oldPrice": 272.49,
+              "image": "src/assets/catProduct/cat12.webp",
+              "category": "cat",
+              "seller": "Happy Cat",
+              "stock": 58,
+              "description": "Cat Nutritious Food provides a balanced diet for cats, with all essential vitamins and minerals to support overall health.",
+              "ingredients": [
+                "Chicken meal",
+                "Corn",
+                "Wheat",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Beet pulp",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "19",
+              "name": "Super Dog Fuel High Rich",
+              "price": 487.99,
+              "oldPrice": 731.99,
+              "image": "src/assets/dogProduct/pd8.webp",
+              "category": "dog",
+              "seller": "PetWorld",
+              "stock": 58,
+              "description": "Super Dog Fuel High Rich is an energy-dense formula designed for highly active dogs that require extra calories and nutrients.",
+              "ingredients": [
+                "Beef meal",
+                "Brown rice",
+                "Barley",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Dried egg product",
+                "Flaxseed",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 2293.55,
+          "id": "1729515253371",
+          "date": "2024-10-21"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 41,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 2
+            },
+            {
+              "id": "20",
+              "name": "Barker's Delight Dog Food",
+              "price": 678.99,
+              "oldPrice": 1018.49,
+              "image": "src/assets/dogProduct/pd9.webp",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 58,
+              "description": "Barker's Delight Dog Food offers a satisfying meal for dogs, packed with protein-rich ingredients and essential nutrients for overall well-being.",
+              "ingredients": [
+                "Chicken meal",
+                "Whole grain oats",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 4
+            },
+            {
+              "id": "19",
+              "name": "Super Dog Fuel High Rich",
+              "price": 487.99,
+              "oldPrice": 731.99,
+              "image": "src/assets/dogProduct/pd8.webp",
+              "category": "dog",
+              "seller": "PetWorld",
+              "stock": 57,
+              "description": "Super Dog Fuel High Rich is an energy-dense formula designed for highly active dogs that require extra calories and nutrients.",
+              "ingredients": [
+                "Beef meal",
+                "Brown rice",
+                "Barley",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Dried egg product",
+                "Flaxseed",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "18",
+              "name": "Ruff and Tumble Dog Food",
+              "price": 699.99,
+              "oldPrice": 1049.99,
+              "image": "src/assets/dogProduct/pd7.webp",
+              "category": "dog",
+              "seller": "Cat Haven",
+              "stock": 58,
+              "description": "Ruff and Tumble Dog Food is a premium formula for dogs that combines high-quality proteins with essential nutrients to maintain health and vitality.",
+              "ingredients": [
+                "Salmon meal",
+                "Sweet potatoes",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Flaxseed",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 4256.92,
+          "id": "1729889072809",
+          "date": "2024-10-25"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 39,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 195.99,
+          "id": "1729889109234",
+          "date": "2024-10-25"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 38,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 53,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 4
+            },
+            {
+              "id": "24",
+              "name": "Cat Nutritious Food",
+              "price": 114.99,
+              "oldPrice": 272.49,
+              "image": "src/assets/catProduct/cat12.webp",
+              "category": "cat",
+              "seller": "Happy Cat",
+              "stock": 56,
+              "description": "Cat Nutritious Food provides a balanced diet for cats, with all essential vitamins and minerals to support overall health.",
+              "ingredients": [
+                "Chicken meal",
+                "Corn",
+                "Wheat",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Beet pulp",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 1261.5800000000002,
+          "id": "1731161054610",
+          "date": "2024-11-09"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 37,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 195.99,
+          "id": "1731332433715",
+          "date": "2024-11-11"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "CHAKKAM PULLI BASHEE",
+            "streetAddress": "Chakkampulli",
+            "city": "Pookkarathara",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "hishamc1618@gmail.com"
+          },
+          "orderedItems": [
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 49,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 276.65,
+          "id": "1731350682787",
+          "date": "2024-11-11"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 47,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 3
+            }
+          ],
+          "totalAmount": 751.95,
+          "id": "1731575156436",
+          "date": "2024-11-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "16",
+              "name": "Canine Cuisine Dog Food",
+              "price": 275.99,
+              "oldPrice": 413.99,
+              "image": "src/assets/dogProduct/pd5.webp",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 58,
+              "description": "Canine Cuisine Dog Food offers a gourmet experience for your pet, made with real meat and wholesome ingredients for a balanced diet.",
+              "ingredients": [
+                "Beef meal",
+                "Brown rice",
+                "Barley",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Dried egg product",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 7
+            },
+            {
+              "id": "17",
+              "name": "Paw Patrol Dog Food",
+              "price": 154.99,
+              "oldPrice": 232.49,
+              "image": "src/assets/dogProduct/pd6.webp",
+              "category": "dog",
+              "seller": "Happy Pets",
+              "stock": 58,
+              "description": "Paw Patrol Dog Food is formulated to support active dogs with high energy needs, ensuring they receive optimal nutrition.",
+              "ingredients": [
+                "Chicken meal",
+                "Corn",
+                "Wheat",
+                "Soybean meal",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Beet pulp",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 10
+            }
+          ],
+          "totalAmount": 3520.83,
+          "id": "1732354452877",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": "d7e9",
+      "username": "Shahid",
+      "email": "shahid@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": false,
+      "cart": [],
+      "orders": [
+        {
+          "shippingDetails": {
+            "fullName": "Shahid",
+            "streetAddress": "Kinfra",
+            "city": "Kakkanchery",
+            "state": "Kerala",
+            "postalCode": "673436",
+            "phoneNumber": "9656736286"
+          },
+          "orderedItems": [
+            {
+              "name": "WhiskerLickin' Cat Chow",
+              "price": 374.36,
+              "oldPrice": 561.54,
+              "image": "src/assets/catProduct/cat1.webp",
+              "category": "cat",
+              "seller": "Feline Friends",
+              "id": "3",
+              "stock": 56,
+              "quantity": 1
+            },
+            {
+              "name": "TailWaggers Nutrition Dog Food",
+              "price": 123.65,
+              "oldPrice": 185.48,
+              "image": "src/assets/dogProduct/pd2.jpg",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 4,
+              "id": "2",
+              "quantity": 1
+            },
+            {
+              "id": "4",
+              "name": "Purrfect Paws Cat Food",
+              "price": 311.54,
+              "oldPrice": 467.31,
+              "image": "src/assets/catProduct/cat2.webp",
+              "category": "cat",
+              "seller": "Pet Supplies",
+              "stock": 57,
+              "quantity": 1
+            },
+            {
+              "id": "8",
+              "name": "Animal Kingdom Cat Treats",
+              "price": 124.75,
+              "oldPrice": 187.13,
+              "image": "src/assets/catProduct/cat6.webp",
+              "category": "cat",
+              "seller": "Animal Kingdom",
+              "stock": 57,
+              "quantity": 1
+            },
+            {
+              "id": "7",
+              "name": "Feline Feast Cat Mix",
+              "price": 396.34,
+              "oldPrice": 594.51,
+              "image": "src/assets/catProduct/cat5.webp",
+              "category": "cat",
+              "seller": "PetWorld",
+              "stock": 57,
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 1369.6399999999999,
+          "id": "1728944495923",
+          "date": "2024-10-14"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 67,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 7
+            },
+            {
+              "id": "23",
+              "name": "Ultimate Pup Dog Food",
+              "price": 314.99,
+              "oldPrice": 472.49,
+              "image": "src/assets/dogProduct/pd12.jpg",
+              "category": "dog",
+              "seller": "Happy Pets",
+              "stock": 58,
+              "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
+              "ingredients": [
+                "Chicken meal",
+                "Brown rice",
+                "Oats",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Blueberries",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 1452.92,
+          "id": "1729137307552",
+          "date": "2024-10-17"
+        }
+      ],
+      "wishlist": []
+    },
+    {
+      "id": "c584",
+      "username": "Amal",
+      "email": "amal@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": true,
+      "cart": [],
+      "orders": []
+    },
+    {
+      "id": "e0d3",
+      "username": "Hakkeem",
+      "email": "hakkeem@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": false,
+      "cart": [],
+      "orders": [
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "Chakkampully House",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "679576",
+            "phoneNumber": "09656736286"
+          },
+          "orderedItems": [
+            {
+              "id": "13",
+              "name": "Kittens' Choice Cat Mix",
+              "price": 245.65,
+              "oldPrice": 368.48,
+              "image": "src/assets/catProduct/cat11.webp",
+              "category": "cat",
+              "seller": "PetWorld",
+              "stock": 58,
+              "description": "Kittens' Choice Cat Mix is specially formulated for the nutritional needs of growing kittens. It contains a balanced blend of protein, fat, and essential vitamins and minerals to support healthy growth and development.",
+              "ingredients": [
+                "Chicken meal",
+                "Brown rice",
+                "Peas",
+                "Fish meal",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Vitamin E supplement",
+                "Calcium carbonate",
+                "Potassium chloride",
+                "Salt",
+                "Taurine"
+              ],
+              "quantity": 5
+            }
+          ],
+          "totalAmount": 1267.25,
+          "id": "1729094036312",
+          "date": "2024-10-16"
+        }
+      ],
+      "wishlist": [
+        {
+          "id": "13",
+          "name": "Kittens' Choice Cat Mix",
+          "price": 245.65,
+          "oldPrice": 368.48,
+          "image": "src/assets/catProduct/cat11.webp",
+          "category": "cat",
+          "seller": "PetWorld",
+          "stock": 58,
+          "description": "Kittens' Choice Cat Mix is specially formulated for the nutritional needs of growing kittens. It contains a balanced blend of protein, fat, and essential vitamins and minerals to support healthy growth and development.",
+          "ingredients": [
+            "Chicken meal",
+            "Brown rice",
+            "Peas",
+            "Fish meal",
+            "Chicken fat (preserved with mixed tocopherols)",
+            "Vitamin E supplement",
+            "Calcium carbonate",
+            "Potassium chloride",
+            "Salt",
+            "Taurine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d90e",
+      "username": "Hisham",
+      "email": "hisham12@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": false,
+      "cart": [],
+      "orders": [
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 47,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 6
+            },
+            {
+              "name": "TailWaggers Nutrition Dog Food",
+              "price": 123.65,
+              "oldPrice": 185.48,
+              "image": "src/assets/dogProduct/pd2.jpg",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 23,
+              "id": "2",
+              "description": "TailWaggers Nutrition Dog Food is crafted with a blend of wholesome ingredients to keep your dog healthy and happy. This recipe includes essential vitamins and minerals for overall well-being.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Barley",
+                "Peas",
+                "Chicken fat"
+              ],
+              "quantity": 2
+            },
+            {
+              "id": "24",
+              "name": "Cat Nutritious Food",
+              "price": 114.99,
+              "oldPrice": 272.49,
+              "image": "src/assets/catProduct/cat12.webp",
+              "category": "cat",
+              "seller": "Happy Cat",
+              "stock": 57,
+              "description": "Cat Nutritious Food provides a balanced diet for cats, with all essential vitamins and minerals to support overall health.",
+              "ingredients": [
+                "Chicken meal",
+                "Corn",
+                "Wheat",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Beet pulp",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 1343.23,
+          "id": "1729873721644",
+          "date": "2024-10-25"
+        }
+      ],
+      "wishlist": []
+    },
+    {
+      "id": "1019",
+      "username": "Shahidkm",
+      "email": "shahidkm@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "isBlocked": false,
+      "cart": [],
+      "orders": [
+        {
+          "shippingDetails": {
+            "fullName": "Shahid",
+            "streetAddress": "Cheekkode",
+            "city": "Edavannappara",
+            "state": "Kerala",
+            "postalCode": "673645",
+            "phoneNumber": "8281678102"
+          },
+          "orderedItems": [
+            {
+              "id": "22",
+              "name": "Doggy's Choice Dog Food",
+              "price": 156.99,
+              "oldPrice": 235.49,
+              "image": "src/assets/dogProduct/pd11.jpg",
+              "category": "dog",
+              "seller": "Pet Supplies",
+              "stock": 36,
+              "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+              "ingredients": [
+                "Beef meal",
+                "Barley",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "23",
+              "name": "Ultimate Pup Dog Food",
+              "price": 314.99,
+              "oldPrice": 472.49,
+              "image": "src/assets/dogProduct/pd12.jpg",
+              "category": "dog",
+              "seller": "Happy Pets",
+              "stock": 51,
+              "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
+              "ingredients": [
+                "Chicken meal",
+                "Brown rice",
+                "Oats",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Blueberries",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 48,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            },
+            {
+              "id": "20",
+              "name": "Barker's Delight Dog Food",
+              "price": 678.99,
+              "oldPrice": 1018.49,
+              "image": "src/assets/dogProduct/pd9.webp",
+              "category": "dog",
+              "seller": "Animal Kingdom",
+              "stock": 54,
+              "description": "Barker's Delight Dog Food offers a satisfying meal for dogs, packed with protein-rich ingredients and essential nutrients for overall well-being.",
+              "ingredients": [
+                "Chicken meal",
+                "Whole grain oats",
+                "Brown rice",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Peas",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 1
+            }
+          ],
+          "totalAmount": 1427.62,
+          "id": "1731384184468",
+          "date": "2024-11-12"
+        }
+      ]
+    },
+    {
+      "id": "077f",
+      "username": "Jasim",
+      "email": "jasim@gmail.com",
+      "password": "121212",
+      "confirmPassword": "121212",
+      "isBlocked": true,
+      "cart": [],
+      "orders": []
+    }
+  ],
+  "products": [
+    {
+      "name": "Barky Bites Premium Dog Food",
+      "price": 528.75,
+      "oldPrice": 793.11,
+      "image": "src/assets/dogProduct/pd1.jpg",
+      "category": "dog",
+      "seller": "PetWorld",
+      "stock": 0,
+      "id": "1",
+      "description": "Barky Bites Premium Dog Food is formulated with high-quality ingredients to provide your dog with a balanced diet. Rich in proteins and healthy fats, this food supports your dog's active lifestyle.",
+      "ingredients": [
+        "Chicken meal",
+        "Brown rice",
+        "Sweet potatoes",
+        "Carrots",
+        "Flaxseed"
+      ]
+    },
+    {
+      "name": "TailWaggers Nutrition Dog Food",
+      "price": 123.65,
+      "oldPrice": 185.48,
+      "image": "src/assets/dogProduct/pd2.jpg",
+      "category": "dog",
+      "seller": "Animal Kingdom",
+      "stock": 21,
+      "id": "2",
+      "description": "TailWaggers Nutrition Dog Food is crafted with a blend of wholesome ingredients to keep your dog healthy and happy. This recipe includes essential vitamins and minerals for overall well-being.",
+      "ingredients": [
+        "Lamb meal",
+        "Brown rice",
+        "Barley",
+        "Peas",
+        "Chicken fat"
+      ]
+    },
+    {
+      "name": "WhiskerLickin' Cat Chow",
+      "price": 374.36,
+      "oldPrice": 561.54,
+      "image": "src/assets/catProduct/cat1.webp",
+      "category": "cat",
+      "seller": "Feline Friends",
+      "id": "3",
+      "stock": 44,
+      "description": "WhiskerLickin' Cat Chow is specially formulated to meet the dietary needs of cats, providing a balanced mix of proteins and nutrients for optimal health.",
+      "ingredients": [
+        "Chicken meal",
+        "Corn",
+        "Soybean meal",
+        "Beet pulp",
+        "Fish meal"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Purrfect Paws Cat Food",
+      "price": 311.54,
+      "oldPrice": 467.31,
+      "image": "src/assets/catProduct/cat2.webp",
+      "category": "cat",
+      "seller": "Pet Supplies",
+      "stock": 55,
+      "description": "Purrfect Paws Cat Food is designed to provide your feline friend with the nutrition they need. This formula includes high-quality proteins to support muscle development.",
+      "ingredients": [
+        "Turkey meal",
+        "Brown rice",
+        "Peas",
+        "Salmon oil",
+        "Vitamins"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Happy Tails Cat Delight",
+      "price": 646.18,
+      "oldPrice": 969.27,
+      "image": "src/assets/catProduct/cat3.webp",
+      "category": "cat",
+      "seller": "Happy Pets",
+      "stock": 57,
+      "description": "Happy Tails Cat Delight is a gourmet food that provides complete nutrition while satisfying your cat's taste buds. Each bite is full of flavor and essential nutrients.",
+      "ingredients": [
+        "Chicken meal",
+        "Fish meal",
+        "Brown rice",
+        "Dried egg product",
+        "Flaxseed"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Kitty Krunch Gourmet Cat Food",
+      "price": 785.95,
+      "oldPrice": 1178.93,
+      "image": "src/assets/catProduct/cat4.webp",
+      "category": "cat",
+      "seller": "Cat Haven",
+      "stock": 55,
+      "description": "Kitty Krunch Gourmet Cat Food is crafted with premium ingredients to support your cat's health and vitality. This formula is rich in proteins and omega fatty acids.",
+      "ingredients": [
+        "Chicken meal",
+        "Rice",
+        "Oats",
+        "Peas",
+        "Salmon oil"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Feline Feast Cat Mix",
+      "price": 396.34,
+      "oldPrice": 594.51,
+      "image": "src/assets/catProduct/cat5.webp",
+      "category": "cat",
+      "seller": "PetWorld",
+      "stock": 55,
+      "description": "Feline Feast Cat Mix offers a delicious combination of flavors and textures that your cat will love. This mix is packed with essential nutrients for overall health.",
+      "ingredients": [
+        "Chicken meal",
+        "Corn",
+        "Barley",
+        "Fish meal",
+        "Dried beet pulp"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Animal Kingdom Cat Treats",
+      "price": 124.75,
+      "oldPrice": 187.13,
+      "image": "src/assets/catProduct/cat6.webp",
+      "category": "cat",
+      "seller": "Animal Kingdom",
+      "stock": 56,
+      "description": "Animal Kingdom Cat Treats are a delightful snack made with natural ingredients. These treats are perfect for rewarding your cat while providing essential nutrients.",
+      "ingredients": [
+        "Chicken",
+        "Turkey",
+        "Salmon",
+        "Brown rice",
+        "Vegetables"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Whiskers' Favorite Cat Munch",
+      "price": 259.45,
+      "oldPrice": 389.18,
+      "image": "src/assets/catProduct/cat7.webp",
+      "category": "cat",
+      "seller": "Feline Friends",
+      "stock": 58,
+      "description": "Whiskers' Favorite Cat Munch is a tasty treat that your cat will adore. Made from high-quality ingredients, these munchies are both delicious and nutritious.",
+      "ingredients": [
+        "Chicken meal",
+        "Fish meal",
+        "Corn",
+        "Rice",
+        "Vegetable glycerin"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Paw-some Cat Nibbles",
+      "price": 99.99,
+      "oldPrice": 149.99,
+      "image": "src/assets/catProduct/cat8.webp",
+      "category": "cat",
+      "seller": "Pet Supplies",
+      "stock": 58,
+      "description": "Paw-some Cat Nibbles are crunchy treats that provide a satisfying bite for your feline friend. Enriched with vitamins and minerals for overall health.",
+      "ingredients": [
+        "Chicken",
+        "Whole grains",
+        "Vegetables",
+        "Fish meal",
+        "Essential nutrients"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Cuddly Cats' Delight",
+      "price": 549.99,
+      "oldPrice": 824.99,
+      "image": "src/assets/catProduct/cat9.webp",
+      "category": "cat",
+      "seller": "Happy Pets",
+      "stock": 57,
+      "description": "Cuddly Cats' Delight is a premium cat food that offers a balanced diet with rich flavors. This food promotes healthy digestion and supports your cat's vitality.",
+      "ingredients": [
+        "Chicken meal",
+        "Brown rice",
+        "Peas",
+        "Salmon oil",
+        "Dried carrots"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Purr-fectly Balanced Cat Food",
+      "price": 319.99,
+      "oldPrice": 479.99,
+      "image": "src/assets/catProduct/cat10.webp",
+      "category": "cat",
+      "seller": "Cat Haven",
+      "stock": 57,
+      "description": "Purr-fectly Balanced Cat Food is designed to meet the nutritional needs of your cat. This formula provides a perfect blend of proteins, fats, and carbohydrates.",
+      "ingredients": [
+        "Turkey meal",
+        "Brown rice",
+        "Peas",
+        "Flaxseed",
+        "Vitamins"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Kittens' Choice Cat Mix",
+      "price": 245.65,
+      "oldPrice": 368.48,
+      "image": "src/assets/catProduct/cat11.webp",
+      "category": "cat",
+      "seller": "PetWorld",
+      "stock": 53,
+      "description": "Kittens' Choice Cat Mix is specially formulated for the nutritional needs of growing kittens. It contains a balanced blend of protein, fat, and essential vitamins and minerals to support healthy growth and development.",
+      "ingredients": [
+        "Chicken meal",
+        "Brown rice",
+        "Peas",
+        "Fish meal",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Vitamin E supplement",
+        "Calcium carbonate",
+        "Potassium chloride",
+        "Salt",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Barking Good Dog Food",
+      "price": 462.99,
+      "oldPrice": 694.49,
+      "image": "src/assets/dogProduct/pd3.webp",
+      "category": "dog",
+      "seller": "Animal Kingdom",
+      "stock": 57,
+      "description": "Barking Good Dog Food is designed for dogs of all breeds and sizes. Packed with high-quality proteins and wholesome grains, it supports energy levels and overall health.",
+      "ingredients": [
+        "Chicken meal",
+        "Whole grain barley",
+        "Brown rice",
+        "Beet pulp",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Natural flavors",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Pawfect Meal Dog Food",
+      "price": 325.65,
+      "oldPrice": 488.48,
+      "image": "src/assets/dogProduct/pd4.webp",
+      "category": "dog",
+      "seller": "Feline Friends",
+      "stock": 56,
+      "description": "Pawfect Meal Dog Food is a delicious blend of meat and grains, designed to provide your dog with all the nutrients they need for a healthy lifestyle.",
+      "ingredients": [
+        "Lamb meal",
+        "Brown rice",
+        "Oatmeal",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Dried egg product",
+        "Fish meal",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Canine Cuisine Dog Food",
+      "price": 275.99,
+      "oldPrice": 413.99,
+      "image": "src/assets/dogProduct/pd5.webp",
+      "category": "dog",
+      "seller": "Pet Supplies",
+      "stock": 51,
+      "description": "Canine Cuisine Dog Food offers a gourmet experience for your pet, made with real meat and wholesome ingredients for a balanced diet.",
+      "ingredients": [
+        "Beef meal",
+        "Brown rice",
+        "Barley",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Dried egg product",
+        "Carrots",
+        "Peas",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Paw Patrol Dog Food",
+      "price": 154.99,
+      "oldPrice": 232.49,
+      "image": "src/assets/dogProduct/pd6.webp",
+      "category": "dog",
+      "seller": "Happy Pets",
+      "stock": 63,
+      "description": "Paw Patrol Dog Food is formulated to support active dogs with high energy needs, ensuring they receive optimal nutrition.",
+      "ingredients": [
+        "Chicken meal",
+        "Corn",
+        "Wheat",
+        "Soybean meal",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Beet pulp",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Ruff and Tumble Dog Food",
+      "price": 699.99,
+      "oldPrice": 1049.99,
+      "image": "src/assets/dogProduct/pd7.webp",
+      "category": "dog",
+      "seller": "Cat Haven",
+      "stock": 57,
+      "description": "Ruff and Tumble Dog Food is a premium formula for dogs that combines high-quality proteins with essential nutrients to maintain health and vitality.",
+      "ingredients": [
+        "Salmon meal",
+        "Sweet potatoes",
+        "Peas",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Flaxseed",
+        "Carrots",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Super Dog Fuel High Rich",
+      "price": 487.99,
+      "oldPrice": 731.99,
+      "image": "src/assets/dogProduct/pd8.webp",
+      "category": "dog",
+      "seller": "PetWorld",
+      "stock": 56,
+      "description": "Super Dog Fuel High Rich is an energy-dense formula designed for highly active dogs that require extra calories and nutrients.",
+      "ingredients": [
+        "Beef meal",
+        "Brown rice",
+        "Barley",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Dried egg product",
+        "Flaxseed",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Barker's Delight Dog Food",
+      "price": 678.99,
+      "oldPrice": 1018.49,
+      "image": "src/assets/dogProduct/pd9.webp",
+      "category": "dog",
+      "seller": "Animal Kingdom",
+      "stock": 53,
+      "description": "Barker's Delight Dog Food offers a satisfying meal for dogs, packed with protein-rich ingredients and essential nutrients for overall well-being.",
+      "ingredients": [
+        "Chicken meal",
+        "Whole grain oats",
+        "Brown rice",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Carrots",
+        "Peas",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Canine Comfort Dog Food",
+      "price": 237.65,
+      "oldPrice": 356.48,
+      "image": "src/assets/dogProduct/pd10.jpg",
+      "category": "dog",
+      "seller": "Feline Friends",
+      "stock": 44,
+      "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+      "ingredients": [
+        "Lamb meal",
+        "Brown rice",
+        "Peas",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Pumpkin",
+        "Carrots",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Doggy's Choice Dog Food",
+      "price": 156.99,
+      "oldPrice": 235.49,
+      "image": "src/assets/dogProduct/pd11.jpg",
+      "category": "dog",
+      "seller": "Pet Supplies",
+      "stock": 35,
+      "description": "Doggy's Choice Dog Food is made from natural ingredients, providing a wholesome and nutritious meal for your furry friend.",
+      "ingredients": [
+        "Beef meal",
+        "Barley",
+        "Brown rice",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Carrots",
+        "Peas",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Ultimate Pup Dog Food",
+      "price": 314.99,
+      "oldPrice": 472.49,
+      "image": "src/assets/dogProduct/pd12.jpg",
+      "category": "dog",
+      "seller": "Happy Pets",
+      "stock": 50,
+      "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
+      "ingredients": [
+        "Chicken meal",
+        "Brown rice",
+        "Oats",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Carrots",
+        "Blueberries",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Cat Nutritious Food",
+      "price": 114.99,
+      "oldPrice": 272.49,
+      "image": "src/assets/catProduct/cat12.webp",
+      "category": "cat",
+      "seller": "Happy Cat",
+      "stock": 55,
+      "description": "Cat Nutritious Food provides a balanced diet for cats, with all essential vitamins and minerals to support overall health.",
+      "ingredients": [
+        "Chicken meal",
+        "Corn",
+        "Wheat",
+        "Chicken fat (preserved with mixed tocopherols)",
+        "Beet pulp",
+        "Vitamins and minerals",
+        "Taurine"
+      ]
+    }
+  ]
+}
