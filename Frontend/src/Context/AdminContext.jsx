@@ -333,7 +333,7 @@ export const AdminProvider = ({ children }) => {
                 getUsersWithMostOrders,
                 users,
                 selectedUser,
-                handleUserClick, // Function to handle user click
+                handleUserClick, // Function to handle user clicks
                 closeModal,
                 isModalOpen,
                 blockUser,
