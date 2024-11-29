@@ -1,44 +1,3 @@
-// const jwt = require('jsonwebtoken');
-// const CustomError = require('../utils/customError');
-// const User = require('../models/userModel');
-
-// const protect = async (req, res, next) => {
-//   let token;
-
-//   if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
-//     try {
-//       // Extract token
-//       token = req.headers.authorization.split(' ')[1];
-
-//       // Verify token
-//       const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
-//       // Attach user to request object
-//       req.user = await User.findById(decoded.id).select('-password');
-//       next();
-//     } catch (error) {
-//       throw new CustomError('Not authorized, token failed', 401);
-//     }
-//   }
-
-//   if (!token) {
-//     throw new CustomError('Not authorized, no token', 401);
-//   }
-// };
-
-// module.exports = protect;
-
-
-
-
-
-
-
-
-
-
-
-
 const jwt = require('jsonwebtoken');
 const CustomError = require('../utils/customError');
 const User = require('../models/userModel');
@@ -52,7 +11,7 @@ const protect = async (req, res, next) => {
       // Extract token
       token = req.headers.authorization.split(' ')[1];
 
-      // Verify token
+      // Verify token using verify method of jwt
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
       // Attach user to request object

@@ -7,7 +7,7 @@ const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes')
 const wishlistRoutes = require('./routes/wishlistRoutes')
-
+const userOrderRoutes = require('./routes/orderRoutes')
 
 const app = express();
 app.use(cors());  // Allow all origins or specify specific origins
@@ -15,7 +15,7 @@ app.use(cors());  // Allow all origins or specify specific origins
 // Middleware
 app.use(express.json());
 
-// Connect to DB
+// Connect to DataBase
 connectDB();
 
 // Routes
@@ -24,6 +24,9 @@ app.use('/api/users', productRoutes);
 app.use('/api/users', cartRoutes);
 app.use('/api/users', wishlistRoutes);
 app.use('/api/admin/products', productRoutes);
+app.use('/api/users/orders', userOrderRoutes);
+
+
 
 // Error Handler
 app.use(errorHandler);

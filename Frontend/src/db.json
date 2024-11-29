@@ -1085,6 +1085,65 @@
           "totalAmount": 3520.83,
           "id": "1732354452877",
           "date": "2024-11-23"
+        },
+        {
+          "shippingDetails": {
+            "fullName": "Hisham",
+            "streetAddress": "abc villa",
+            "city": "Edappal",
+            "state": "Kerala",
+            "postalCode": "123456",
+            "phoneNumber": "1234567890"
+          },
+          "orderedItems": [
+            {
+              "id": "23",
+              "name": "Ultimate Pup Dog Food",
+              "price": 314.99,
+              "oldPrice": 472.49,
+              "image": "src/assets/dogProduct/pd12.jpg",
+              "category": "dog",
+              "seller": "Happy Pets",
+              "stock": 50,
+              "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
+              "ingredients": [
+                "Chicken meal",
+                "Brown rice",
+                "Oats",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Carrots",
+                "Blueberries",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 4
+            },
+            {
+              "id": "21",
+              "name": "Canine Comfort Dog Food",
+              "price": 237.65,
+              "oldPrice": 356.48,
+              "image": "src/assets/dogProduct/pd10.jpg",
+              "category": "dog",
+              "seller": "Feline Friends",
+              "stock": 44,
+              "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
+              "ingredients": [
+                "Lamb meal",
+                "Brown rice",
+                "Peas",
+                "Chicken fat (preserved with mixed tocopherols)",
+                "Pumpkin",
+                "Carrots",
+                "Vitamins and minerals",
+                "Taurine"
+              ],
+              "quantity": 3
+            }
+          ],
+          "totalAmount": 2011.91,
+          "id": "1732806520105",
+          "date": "2024-11-28"
         }
       ]
     },
@@ -1924,7 +1983,7 @@
       "image": "src/assets/dogProduct/pd10.jpg",
       "category": "dog",
       "seller": "Feline Friends",
-      "stock": 44,
+      "stock": 41,
       "description": "Canine Comfort Dog Food is designed to be easy on the stomach, making it perfect for dogs with sensitive digestive systems.",
       "ingredients": [
         "Lamb meal",
@@ -1966,7 +2025,7 @@
       "image": "src/assets/dogProduct/pd12.jpg",
       "category": "dog",
       "seller": "Happy Pets",
-      "stock": 50,
+      "stock": 46,
       "description": "Ultimate Pup Dog Food is a complete and balanced meal that promotes healthy growth and energy for active dogs.",
       "ingredients": [
         "Chicken meal",
