@@ -296,7 +296,7 @@ export const AdminProvider = ({ children }) => {
             // Toggle the isBlocked status
             const updatedUser = { ...userToBlock, isBlocked: !userToBlock.isBlocked };
 
-            // Update the user in the database
+            // Update the user in the db(json)
             await axios.patch(`http://localhost:5001/users/${userId}`, { isBlocked: updatedUser.isBlocked });
             // await axios.patch(`http://192.168.57.37:5001/users/${userId}`, { isBlocked: updatedUser.isBlocked });
 
