@@ -20,10 +20,10 @@ exports.addToWishlist = asyncHandler(async (req, res) => {
     res.status(200).json({ success: true, message: "item added to the wishlist", wishlist: wishlist.items.slice().reverse() });
 });
 
-// Get wishlist for a user
+// Get full wishlist of a user
 exports.getWishlist = asyncHandler(async (req, res) => {
     const { id } = req.params;
-    let wishlist = await Wishlist.findOne({ userId: id }).populate('items.productId');
+    let wishlist = await Wishlist.findOne({ userId: id }).populate('items.productId', 'name price stock');
 
     if (!wishlist) {
         // return res.status(404).json({ success: false, message: 'Wishlist not found' });

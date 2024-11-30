@@ -25,18 +25,18 @@ exports.addToCart = asyncHandler(async (req, res) => {
     cart = new Cart({ userId: id, items: [] });
   }
 
-  // Check if the product already exists in the cart
+  // Checking product that exist in cart
   const itemIndex = cart.items.findIndex((item) => item.productId.toString() === productId);
 
   if (itemIndex > -1) {
-    // Update the quantity if the product exists
+    // Updating qty
     const updatedQuantity = cart.items[itemIndex].quantity + quantity;
     if (updatedQuantity > product.stock) {
       throw new CustomError('Insufficient stock for the updated quantity', 400);
     }
     cart.items[itemIndex].quantity = updatedQuantity;
   } else {
-    // Add new product to the cart
+    // Adding new product to the cart
     cart.items.push({ productId, quantity });
   }
 

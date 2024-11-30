@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const CustomError = require('../utils/customError');
 const User = require('../models/userModel');
 
-// Middleware to protect routes and ensure the user is authenticated
+// middleware used protect routes by checking the authetication
 const protect = async (req, res, next) => {
   let token;
 
@@ -11,7 +11,7 @@ const protect = async (req, res, next) => {
       // Extract token
       token = req.headers.authorization.split(' ')[1];
 
-      // Verify token using verify method of jwt
+      // Verifying token using verify method of jwt (inbuilt method)
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
       // Attach user to request object
@@ -19,7 +19,6 @@ const protect = async (req, res, next) => {
       if (!req.user) {
         throw new CustomError('User not found', 404);
       }
-
       next();
     } catch (error) {
       throw new CustomError('Not authorized, token failed', 401);
@@ -31,7 +30,9 @@ const protect = async (req, res, next) => {
   }
 };
 
-// Middleware to restrict route access to admins only
+
+
+// admin authentication middleware (role checking)
 const isAdmin = (req, res, next) => {
   if (req.user && req.user.role === 'admin') {
     next();

@@ -2,15 +2,13 @@ const asyncHandler = require('../middlewares/asyncHandler');
 const User = require('../models/userModel');
 const { registerValidation, loginValidation } = require('../utils/validators');
 const CustomError = require('../utils/customError');
+const generateToken = require('../utils/generateToken')
 
-
-const jwt = require('jsonwebtoken');
-const mongoose = require('mongoose'); // Required to detect MongoDB errors
 
 exports.registerUser = asyncHandler(async (req, res) => {
   const { username, email, password, confirmPassword } = req.body;
 
-  // Validate input
+  // Validate input using joi
   const { error } = registerValidation.validate({ username, email, password, confirmPassword });
   if (error) throw new CustomError(error.details[0].message, 400);
 
@@ -19,11 +17,8 @@ exports.registerUser = asyncHandler(async (req, res) => {
     const existingUser = await User.findOne({ email });
     if (existingUser) throw new CustomError('Email already registered', 400);
 
-    // Create user with role: 'user'
+    // Create an user
     const user = await User.create({ username, email, password });
-
-    // Generate JWT token
-    const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
     res.status(201).json({
       message: 'User registered successfully',
@@ -45,24 +40,25 @@ exports.registerUser = asyncHandler(async (req, res) => {
 exports.loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  // Validate input
+  // Validate input using joi
   const { error } = loginValidation.validate({ email, password });
   if (error) throw new CustomError(error.details[0].message, 400);
 
-  // Check if user exists
+  // finding for the user is exist in db
   const user = await User.findOne({ email });
   if (!user) throw new CustomError('Invalid email or password', 401);
 
-  // Verify password
+  // Verifying password
   const isMatch = await user.matchPassword(password);
   if (!isMatch) throw new CustomError('Invalid email or password', 401);
 
-  // Generate JWT token
-  const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '1d' });
+  // Generating JWT token
+  const token = generateToken(user._id);
+
 
   res.status(200).json({
     message: 'Login successful',
-    token, // Include token in the response
+    token,
     user: { id: user._id, username: user.username, email: user.email, role: user.role },
   });
 });
