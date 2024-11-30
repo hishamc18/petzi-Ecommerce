@@ -9,13 +9,5 @@ const WishlistSchema = new mongoose.Schema({
   items: [WishlistItemSchema],
 });
 
-WishlistSchema.methods.removeItem = function (productId) {
-  this.items = this.items.filter(item => item.productId.toString() !== productId);
-};
-
-WishlistSchema.methods.clearWishlist = function () {
-  this.items = [];
-};
-
 const Wishlist = mongoose.model("Wishlist", WishlistSchema);
 module.exports = Wishlist;

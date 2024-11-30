@@ -15,9 +15,6 @@ router.delete('/:id/cart/:productId', protect, cartController.removeItemFromCart
 // Clear the cart
 router.delete('/:id/cart', protect, cartController.clearCart);
 
-// // Update quantity of a product in the cart
-// router.put('/:id/cart/:productId', protect, cartController.updateQuantity);
-
 // Increase product quantity in cart
 router.put('/:id/cart/:productId/increase', protect, cartController.increaseQuantity);
 

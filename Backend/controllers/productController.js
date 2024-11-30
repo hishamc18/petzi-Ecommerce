@@ -53,10 +53,11 @@ exports.addProduct = asyncHandler(async (req, res) => {
       stock,
       description,
       ingredients,
+      iseDeleted
     } = req.body;
   
     // Validate input
-    if (!name || !price || !image || !category || !seller || !stock || !description || !ingredients) {
+    if (!name || !price || !image || !category || !seller || !stock || !description || !ingredients || !iseDeleted) {
       throw new CustomError('All fields are required to add a product', 400);
     }
   
@@ -71,6 +72,7 @@ exports.addProduct = asyncHandler(async (req, res) => {
       stock,
       description,
       ingredients,
+      iseDeleted,
     });
   
     res.status(201).json({

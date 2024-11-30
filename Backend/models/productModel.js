@@ -36,6 +36,10 @@ const productSchema = new mongoose.Schema(
     ingredients: {
       type: [String],
     },
+    isDeleted: {
+        type: Boolean,
+        default: false
+    },
   },
   { timestamps: true }
 );

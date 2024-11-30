@@ -23,8 +23,8 @@ app.use('/api/users', userRoutes);
 app.use('/api/users', productRoutes);
 app.use('/api/users', cartRoutes);
 app.use('/api/users', wishlistRoutes);
+app.use('/api/users/', userOrderRoutes);
 app.use('/api/admin/products', productRoutes);
-app.use('/api/users/orders', userOrderRoutes);
 
 
 

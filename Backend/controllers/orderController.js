@@ -1,8 +1,9 @@
 const Order = require('../models/orderModel');
+const Product = require('../models/productModel');
 const CustomError = require('../utils/customError');
 const asyncHandler = require('../middlewares/asyncHandler');
 
-// Create a new order
+// Create new order
 exports.createOrder = asyncHandler(async (req, res) => {
   const { items, shippingAddress, paymentMethod, totalAmount } = req.body;
 
@@ -10,6 +11,24 @@ exports.createOrder = asyncHandler(async (req, res) => {
     throw new CustomError('No items in the cart to create an order', 400);
   }
 
+  // stock managing
+  for (const item of items) {
+    const product = await Product.findById(item.productId);
+    if (!product) {
+      throw new CustomError(`Product with ID ${item.productId} not found`, 404);
+    }
+    if (product.stock < item.quantity) {
+      throw new CustomError(
+        `Insufficient stock for product: ${product.name}. Available stock: ${product.stock}`,
+        400
+      );
+    }
+    //stock reducing if order is accepted
+    product.stock -= item.quantity;
+    await product.save();
+  }
+
+  // Creating the order after stock validation and reduction
   const order = await Order.create({
     userId: req.user.id,
     items,
@@ -25,23 +44,6 @@ exports.createOrder = asyncHandler(async (req, res) => {
   });
 });
 
-// Get order by ID
-exports.getOrderById = asyncHandler(async (req, res) => {
-  const { id } = req.params;
-
-  const order = await Order.findById(id)
-    .populate('items.productId', 'name price')
-    .populate('userId', 'username email');
-
-  if (!order) {
-    throw new CustomError('Order not found', 404);
-  }
-
-  res.status(200).json({
-    success: true,
-    order,
-  });
-});
 
 // Get orders for a user
 exports.getUserOrders = asyncHandler(async (req, res) => {
