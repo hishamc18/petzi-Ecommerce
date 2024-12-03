@@ -4,15 +4,15 @@ const wishlistController = require('../controllers/wishlistController');
 const {protect} = require('../middlewares/authMiddleware')
 
 // add product to wishlist
-router.post('/:id/wishlist', protect, wishlistController.addToWishlist);
+router.post('/wishlist/:productId', protect, wishlistController.addToWishlist);
 
 // get user wishlist
-router.get('/:id/wishlist', protect, wishlistController.getWishlist);
+router.get('/wishlist', protect, wishlistController.getWishlist);
 
 // delete individual item from wishlist
-router.delete('/:id/wishlist/:productId', protect, wishlistController.removeItemFromWishlist);
+router.delete('/wishlist/:productId', protect, wishlistController.removeItemFromWishlist);
 
 // clear wishlist
-router.delete('/:id/wishlist', protect, wishlistController.clearWishlist);
+router.delete('/wishlist', protect, wishlistController.clearWishlist);
 
 module.exports = router;

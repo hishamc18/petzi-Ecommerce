@@ -22,7 +22,7 @@ exports.registerUser = asyncHandler(async (req, res) => {
 
     res.status(201).json({
       message: 'User registered successfully',
-      token, // Include token in the response
+      // token, // Include token in the response
       user: { id: user._id, username: user.username, email: user.email, role: user.role },
     });
   } catch (err) {

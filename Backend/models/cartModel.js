@@ -10,13 +10,13 @@ const CartSchema = new mongoose.Schema({
   items: [CartItemSchema],
 });
 
-CartSchema.methods.removeItem = function (productId) {
-  this.items = this.items.filter(item => item.productId.toString() !== productId);
-};
+// CartSchema.methods.removeItem = function (productId) {
+//   this.items = this.items.filter(item => item.productId.toString() !== productId);
+// };
 
-CartSchema.methods.clearCart = function () {
-  this.items = [];
-};
+// CartSchema.methods.clearCart = function () {
+//   this.items = [];
+// };
 
 const Cart = mongoose.model("Cart", CartSchema);
 module.exports = Cart;

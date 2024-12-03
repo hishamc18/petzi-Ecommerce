@@ -5,7 +5,7 @@ const CustomError = require('../utils/customError');
 
 // Add product to cart
 exports.addToCart = asyncHandler(async (req, res) => {
-  const { id } = req.params; // User ID
+  const { id } = req.params;
   const { productId, quantity } = req.body;
 
   // Fetch the product
