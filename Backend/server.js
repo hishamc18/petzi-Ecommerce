@@ -8,6 +8,7 @@ const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes')
 const wishlistRoutes = require('./routes/wishlistRoutes')
 const userOrderRoutes = require('./routes/orderRoutes')
+const adminRoutes = require('./routes/adminRoutes')
 
 const app = express();
 app.use(cors());  // Allow all origins or specify specific origins
@@ -18,13 +19,16 @@ app.use(express.json());
 // Connect to DataBase
 connectDB();
 
-// Routes
+// User Routes
 app.use('/api/users', userRoutes);
 app.use('/api/users', productRoutes);
 app.use('/api/users', cartRoutes);
 app.use('/api/users', wishlistRoutes);
 app.use('/api/users/', userOrderRoutes);
 app.use('/api/admin/products', productRoutes);
+
+//adminRoutes
+app.use('/api/admin', adminRoutes);
 
 
 
