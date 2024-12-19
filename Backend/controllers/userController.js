@@ -1,64 +1,84 @@
 const asyncHandler = require('../middlewares/asyncHandler');
-const User = require('../models/userModel');
+const { registerUserService, loginUserService } = require('../services/userService');
 const { registerValidation, loginValidation } = require('../utils/validators');
+const { generateAccessToken } = require('../utils/generateToken')
 const CustomError = require('../utils/customError');
-const generateToken = require('../utils/generateToken')
+const jwt = require('jsonwebtoken')
 
-
+// Register User
 exports.registerUser = asyncHandler(async (req, res) => {
   const { username, email, password, confirmPassword } = req.body;
 
-  // Validate input using joi
+  // Validate input using Joi
   const { error } = registerValidation.validate({ username, email, password, confirmPassword });
   if (error) throw new CustomError(error.details[0].message, 400);
 
-  try {
-    // Check if user already exists
-    const existingUser = await User.findOne({ email });
-    if (existingUser) throw new CustomError('Email already registered', 400);
+  // Call service to register user
+  const user = await registerUserService({ username, email, password });
 
-    // Create an user
-    const user = await User.create({ username, email, password });
-
-    res.status(201).json({
-      message: 'User registered successfully',
-      // token, // Include token in the response
-      user: { id: user._id, username: user.username, email: user.email, role: user.role },
-    });
-  } catch (err) {
-    //err code 11000 indicates duplicate key error in mongoDB
-    if (err.code === 11000) {  
-      const field = Object.keys(err.keyPattern)[0]; // used to get the error occuring field
-      throw new CustomError(`The ${field} "${err.keyValue[field]}" is already taken. Please use a different one.`, 400);
-    }
-    throw err; // Re-throw other errors
-  }
+  // Send response
+  res.status(201).json({
+    message: 'User registered successfully',
+    user,
+  });
 });
 
-
-// Login 
+// Login User
 exports.loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  // Validate input using joi
+  // Validate input using Joi
   const { error } = loginValidation.validate({ email, password });
   if (error) throw new CustomError(error.details[0].message, 400);
 
-  // finding for the user is exist in db
-  const user = await User.findOne({ email });
-  if (!user) throw new CustomError('Invalid email or password', 401);
+  // Call service to login user
+  const { accessToken, refreshToken, user } = await loginUserService({ email, password });
 
-  // Verifying password
-  const isMatch = await user.matchPassword(password);
-  if (!isMatch) throw new CustomError('Invalid email or password', 401);
+  // Set tokens as HTTP-only cookies
+  res.cookie('accessToken', accessToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production', // Secure in production
+    maxAge: 15 * 60 * 1000, // 15 minutes
+  });
 
-  // Generating JWT token
-  const token = generateToken(user._id);
+  res.cookie('refreshToken', refreshToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+  });
 
-
+  // Send response
   res.status(200).json({
     message: 'Login successful',
-    token,
-    user: { id: user._id, username: user.username, email: user.email, role: user.role },
+    user,
   });
+});
+
+
+// Refresh Token
+exports.refreshToken = asyncHandler(async (req, res) => {
+  const { refreshToken } = req.cookies;
+
+  if (!refreshToken) {
+    throw new CustomError('Refresh token not found', 401);
+  }
+
+  try {
+    // Verify the refresh token
+    const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+
+    // Generate a new access token
+    const newAccessToken = generateAccessToken({ id: decoded.id, role: decoded.role, email: decoded.email });
+
+    // Set the new access token as a cookie
+    res.cookie('accessToken', newAccessToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: 15 * 60 * 1000, // 15 minutes
+    });
+
+    res.status(200).json({ message: 'Token refreshed successfully' });
+  } catch (err) {
+    throw new CustomError('Invalid or expired refresh token', 401);
+  }
 });
